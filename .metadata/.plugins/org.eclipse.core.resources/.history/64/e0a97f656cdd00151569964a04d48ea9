@@ -1,0 +1,5 @@
+package de.vogella.osgi.firstbundle.internal;
+
+public class MyThread {
+
+}

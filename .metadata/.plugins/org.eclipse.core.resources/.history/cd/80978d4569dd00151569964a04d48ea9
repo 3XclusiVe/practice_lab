@@ -1,0 +1,5 @@
+package com.example.e4.rcp.todo.services;
+
+public class TodoServiceFactory {
+
+}
