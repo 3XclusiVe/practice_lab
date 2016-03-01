@@ -1,0 +1,38 @@
+package de.vogella.osgi.firstbundle.internal;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+import com.example.e4.rcp.todo.model.*;
+import com.example.e4.rcp.todo.services.*;
+
+public class MyThread extends Thread {
+  private volatile boolean active = true;
+
+  public void run() {
+    while (active) {
+      System.out.println("Hello OSGi console");
+      try { 
+    	Consumer<List<Todo>> Llist = null;
+    	
+    	TodoServiceFactory.getInstance().getTodos(Llist);
+    	
+    	TodoServiceFactory.getInstance().getTags(1);
+    	
+    	for(List<Todo> list : Llist) {
+    		for(Todo todo : list ) {
+    			System.out.println(todo);
+    		}
+    	}
+    	
+        Thread.sleep(5000);
+      } catch (Exception e) {
+        System.out.println("Thread interrupted " + e.getMessage());
+      }
+    }
+  }
+
+  public void stopThread() {
+    active = false;
+  }
+} 

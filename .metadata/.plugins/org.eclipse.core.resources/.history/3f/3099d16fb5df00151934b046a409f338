@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Firstbundle
+Bundle-SymbolicName: de.vogella.osgi.firstbundle
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.vogella.osgi.firstbundle.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: com.example.e4.rcp.todo.model,
+ com.example.e4.rcp.todo.services

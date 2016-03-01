@@ -3,11 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Services
 Bundle-SymbolicName: com.example.e4.rcp.todo.services
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.example.e4.rcp.todo.services.Activator
 Bundle-Vendor: EXAMPLE
-Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime,
- com.example.e4.rcp.todo.model;bundle-version="1.0.0"
+Eclipse-ExtensibleAPI: true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Import-Package: com.example.e4.rcp.todo.model
+Export-Package: com.example.e4.rcp.todo.services
