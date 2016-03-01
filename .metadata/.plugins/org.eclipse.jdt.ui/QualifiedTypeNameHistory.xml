@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.e4.rcp.todo.model.Tag"/>
+<fullyQualifiedTypeName name="com.example.e4.rcp.todo.services.TodoServiceFactory"/>
+<fullyQualifiedTypeName name="java.util.function.Consumer"/>
+</qualifiedTypeNameHistroy>

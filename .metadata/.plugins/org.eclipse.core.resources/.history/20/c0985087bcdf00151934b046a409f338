@@ -15,10 +15,8 @@ public class MyThread extends Thread {
     while (active) {
       System.out.println("Hello OSGi console");
       try { 
-    	
-    	  
-    	ITodoService service =  TodoServiceFactory.getInstance(); 
-        service.getTodos(consumer);   
+    	 
+        TodoServiceFactory.getInstance().getTodos(consumer);   
     	
         Thread.sleep(5000);
       } catch (Exception e) {
